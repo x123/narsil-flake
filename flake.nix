@@ -27,8 +27,11 @@
             noLambdaArg = true;
             noLambdaPatternNames = true;
           };
+          markdownlint.enable = true;
           shellcheck.enable = true;
           statix.enable = true;
+          typos.enable = true;
+          typos.settings.locale = "en";
         };
       };
     });

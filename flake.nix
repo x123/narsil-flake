@@ -39,13 +39,13 @@
     packages = forAllSystems (system: {
       default = nixpkgs.legacyPackages.${system}.stdenv.mkDerivation rec {
         pname = "narsil";
-        version = "1.3.0-78-g20b8123e0";
+        version = "1.3.0-82-g1bf26cba8";
 
         src = nixpkgs.legacyPackages.${system}.fetchFromGitHub {
           owner = "NickMcConnell";
           repo = "NarSil";
           rev = version;
-          hash = "sha256-VhUV6BvONQphslEe1CUnWIhs+e0c84X4msm+ud4t3vo=";
+          hash = "sha256-XpUWnfL3t2HxuhODNIoYFzbvQ7NLSpVuDl5XKNEed2c=";
         };
 
         nativeBuildInputs = [nixpkgs.legacyPackages.${system}.autoreconfHook];
